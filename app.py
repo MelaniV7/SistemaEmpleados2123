@@ -15,7 +15,7 @@ mysql.init_app(app)
 
 @app.route('/')
 def index():
-    sql=""#acá hay que agregar el código insert del phpadmyn
+    sql="INSERT INTO `empleados` (`id`, `nombre`, `correo`, `foto`) VALUES (NULL, 'ejemplo', 'ejemplito@hotmail.com', 'foto-ejemplo.jpg')"
     conn=mysql.connect()
     cursor=conn.cursor()
     cursor.execute(sql)
