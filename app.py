@@ -12,7 +12,7 @@ app.config['MYSQL_DATABASE_PASSWORD']=''
 app.config['MYSQL_DATABASE_DB']='sistema2123'
 mysql.init_app(app)
 
-
+#esto es un comentario de prueba creado para la nueva rama
 @app.route('/')
 def index():
     sql="INSERT INTO `empleados` (`id`, `nombre`, `correo`, `foto`) VALUES (NULL, 'ejemplo', 'ejemplito@hotmail.com', 'foto-ejemplo.jpg')"
